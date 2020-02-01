@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100.0"
+    android:viewportHeight="100.0"
+    android:name="usericon"
+>
+    <group>
+        <path
+            android:fillColor="#700696"
+            android:pathData="M 50 5 A 20 20 10 0 0 50 45 A 20 20 10 0 0 50 5
+                              M 5 70 A 60 60 10 0 1 95 70 L 85 80 L 15 80"
+        />
+    </group>
+</vector>
