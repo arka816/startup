@@ -1,8 +1,12 @@
 package startup.cube;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import android.Manifest;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
@@ -11,10 +15,12 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
 
 import static startup.cube.WebService.registerUser;
 
@@ -31,6 +37,11 @@ public class SignupActivity extends AppCompatActivity {
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(ContextCompat.getColor(getApplicationContext(), R.color.statusBarColor));
 
+        if (checkSelfPermission(Manifest.permission.GET_ACCOUNTS) != PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.READ_SMS) != PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.READ_PHONE_NUMBERS) != PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_PHONE_NUMBERS}, 1);
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.GET_ACCOUNTS}, 1);
+        }
+
         final ImageView passwordEye = findViewById(R.id.passwordEye);
         final ImageView cpasswordEye = findViewById(R.id.cpasswordEye);
         final EditText signupName = findViewById(R.id.signupName);
@@ -38,6 +49,7 @@ public class SignupActivity extends AppCompatActivity {
         final EditText signupPassword = findViewById(R.id.signupPassword);
         final EditText signupCPassword = findViewById(R.id.signupCPassword);
         final Button signup = findViewById(R.id.signupButton);
+        final TextView loginRedirect = findViewById(R.id.loginRedirect);
 
         passwordEye.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,7 +100,17 @@ public class SignupActivity extends AppCompatActivity {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
+
+                //registerUser imported from web services
                 registerUser(credObj, getApplicationContext());
+            }
+        });
+
+        loginRedirect.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent loginPageIntent = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(loginPageIntent);
             }
         });
     }

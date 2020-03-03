@@ -9,8 +9,11 @@
     >
     <group>
         <path
+            android:strokeColor="#fff"
+            android:strokeWidth="0"
             android:fillColor="#fff"
-            android:pathData="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.959 17l-4.5-4.319 1.395-1.435 3.08 2.937 7.021-7.183 1.422 1.409-8.418 8.591z"
+            android:pathData="M 0 12 L 10 2 L 12 4 L 5.4 10.6 L 24 10.6 L 24 13.4 L 5.4 13.4
+                                L 12 20 L 10 22 Z"
         />
     </group>
 </vector>

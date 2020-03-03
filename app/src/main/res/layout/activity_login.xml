@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:background="#700696"
+    android:clipToPadding="false">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <TextView
+            android:id="@+id/loginHeader"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:text="Log In to Your Account"
+            />
+        <LinearLayout
+            android:id="@+id/loginPhoneContainer"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/loginHeader"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            >
+            <ImageView
+                android:id="@+id/loginPhoneIcon"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/inputicon"
+                app:srcCompat="@drawable/phoneicon" />
+            <EditText
+                android:id="@+id/loginPhone"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:hint="your phone no."
+                android:textSize="20sp"
+                android:inputType="phone"
+                android:background="@drawable/input"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/loginPasswordContainer"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/loginPhoneContainer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            >
+            <ImageView
+                android:id="@+id/loginPasswordIcon"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/inputicon"
+                app:srcCompat="@drawable/keyicon" />
+            <EditText
+                android:id="@+id/loginPassword"
+                android:layout_width="210dp"
+                android:layout_height="55dp"
+                android:hint="Enter password"
+                android:textSize="20sp"
+                android:inputType="textPassword"
+                android:background="@drawable/input"/>
+            <ImageView
+                android:translationX="-10dp"
+                android:id="@+id/loginPasswordEye"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:src="@drawable/eyeicon"
+                android:background="@drawable/viewpassword"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="305dp"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/loginPasswordContainer"
+            android:background="@drawable/button"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:textColor="#700696"
+            android:text="Log In" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

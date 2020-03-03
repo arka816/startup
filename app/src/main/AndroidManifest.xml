@@ -4,6 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="startup.cube">
 
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <dist:module dist:instant="true" />
 
     <application
@@ -14,8 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".EditDPActivity"></activity>
         <activity
-            android:name=".SignupActivity"
+            android:name=".CreateProfileActivity"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +29,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".OTPActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SignupActivity"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

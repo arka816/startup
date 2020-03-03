@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="150dp"
+    android:height="150dp"
+    android:viewportWidth="150.0"
+    android:viewportHeight="150.0"
+    >
+    <group>
+        <path
+            android:fillColor="#700696"
+            android:pathData="M 75 0 A 75 75 10 0 0 75 150 A 75 75 10 0 0 75 0"
+            />
+        <group
+            android:name="camera"
+            android:translateY="25"
+            android:translateX="25"
+            >
+            <path
+                android:strokeColor="#fff"
+                android:strokeWidth="0"
+                android:fillColor="#fff"
+                android:pathData="M 15 70 L 15 35 A 8 8 10 0 1 23 27 L 30 27 A 5 5 10 0 0 34.69 23.71 L 37.42 16.19 L 62.58 16.19 L 65.31 23.71
+                    A 5 5 10 0 0 70 27 L 77 27 A 8 8 10 0 1 85 35 L 85 70 A 8 8 10 0 1 77 78 L 23 78 A 8 8 10 0 1 15 70"
+                />
+            <path
+                android:fillColor="#700696"
+                android:pathData="M 50 35 A 15 15 10 0 0 50 65 A 15 15 10 0 0 50 35"
+                />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 50 41 A 9 9 10 0 0 50 59 A 9 9 10 0 0 50 41"
+                />
+            <path
+                android:fillColor="#700696"
+                android:pathData="M 75 35 A 3 3 10 0 0 75 41 A 3 3 10 0 0 75 35"
+                />
+        </group>
+    </group>
+</vector>

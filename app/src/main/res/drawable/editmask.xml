@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0"
+    android:name="usericon"
+    >
+    <group>
+        <path
+            android:strokeColor="#80ffffff"
+            android:strokeWidth="0.2"
+            android:pathData="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0"
+        />
+        <path
+            android:strokeColor="#80ffffff"
+            android:strokeWidth="0.15"
+            android:pathData="M 8 0 L 8 24 M 16 24 L 16 0 M 0 8 L 24 8 M 24 16 L 0 16"
+        />
+        <path
+            android:strokeColor="#fff"
+            android:strokeWidth="0.6"
+            android:pathData="M 0 0 L 0 4 M 0 0 L 4 0 M 10 0 L 14 0 M 20 0 L 24 0 L 24 4
+            M 24 10 L 24 14 M 24 20 L 24 24 20 24 M 14 24 L 10 24 M 4 24 L 0 24 0 20 M 0 14 L 0 10"
+        />
+    </group>
+</vector>

@@ -7,6 +7,18 @@
     tools:context=".SignupActivity"
     android:background="#700696"
     android:clipToPadding="false">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:background="#700696"
+        android:gravity="center"
+        android:text="SIGN UP - STEP 1/2"
+        android:textColor="#fff"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -165,4 +177,30 @@
             android:layout_marginTop="7dp"
         />
     </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:text="Already have an Account? "/>
+        <TextView
+            android:id="@+id/loginRedirect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:translationY="-1dp"
+            android:textColor="#fff"
+            android:text=" LOG IN"/>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

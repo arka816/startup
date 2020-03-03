@@ -2,6 +2,7 @@
   <dictionary name="Arka">
     <words>
       <w>cpassword</w>
+      <w>retval</w>
       <w>signup</w>
       <w>usericon</w>
     </words>
