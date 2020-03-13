@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">Cube</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="business_global">business</string>
+    <string name="friendship_global">gargi2</string>
+    <string name="sports_global">sports</string>
+    <string name="entertainment_global">entertainment</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="friendship">friendship</string>
+    <string name="local">local</string>
+    <string name="moments">Moments</string>
+    <string name="chats">Chats</string>
 </resources>

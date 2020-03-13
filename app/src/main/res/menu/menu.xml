@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/business"
+        android:icon="@drawable/ic_business"
+        android:title="@string/business_global" />
+    <item
+        android:id="@+id/id2"
+        android:icon="@drawable/ic_friendship"
+        android:title="@string/friendship" />
+    <item android:id="@+id/id3" android:title="@string/sports_global" android:icon="@drawable/ic_soprts" />
+    <item android:id="@+id/id4" android:title="@string/entertainment_global" android:icon="@drawable/ic_entertainment"/>
+
+</menu>
